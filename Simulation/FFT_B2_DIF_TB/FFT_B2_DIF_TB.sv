@@ -13,7 +13,7 @@
 
 `timescale 1ns/1ns
 
-module FFT_2_DIF_TB;
+module FFT_B2_DIF_TB;
 
 reg clk;
 reg rst_n;
@@ -26,10 +26,10 @@ reg [15:0] sink_i;
 wire [15:0] source_r;
 wire [15:0] source_i;
 
-FFT_2_DIF #(
+FFT_B2_DIF #(
 	.DATA_WIDTH(16),
 	.POW(4)
-)u_FFT_2_DIF(
+)u_FFT_B2_DIF(
 
 		.clk(clk),
 		.rst_n(rst_n),
